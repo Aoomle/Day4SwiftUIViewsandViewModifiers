@@ -15,6 +15,7 @@
 		4735737125C6FAA400CA2743 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4735736F25C6FAA400CA2743 /* LaunchScreen.storyboard */; };
 		4735737B25C6FAB900CA2743 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4735737A25C6FAB800CA2743 /* Game.swift */; };
 		4735738825C6FB6700CA2743 /* Day4SwiftUIViewsandViewModifiersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4735738725C6FB6700CA2743 /* Day4SwiftUIViewsandViewModifiersTests.swift */; };
+		478BA10325C74AE500D9E1E7 /* TextViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 478BA10225C74AE500D9E1E7 /* TextViews.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		4735738525C6FB6700CA2743 /* Day4SwiftUIViewsandViewModifiersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Day4SwiftUIViewsandViewModifiersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4735738725C6FB6700CA2743 /* Day4SwiftUIViewsandViewModifiersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day4SwiftUIViewsandViewModifiersTests.swift; sourceTree = "<group>"; };
 		4735738925C6FB6700CA2743 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		478BA10225C74AE500D9E1E7 /* TextViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViews.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				4735736825C6FAA300CA2743 /* ContentView.swift */,
+				478BA10225C74AE500D9E1E7 /* TextViews.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -238,6 +241,7 @@
 				4735736725C6FAA300CA2743 /* SceneDelegate.swift in Sources */,
 				4735736925C6FAA300CA2743 /* ContentView.swift in Sources */,
 				4735737B25C6FAB900CA2743 /* Game.swift in Sources */,
+				478BA10325C74AE500D9E1E7 /* TextViews.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
