@@ -14,7 +14,7 @@ struct ContentView: View {
   
   var body: some View {
     ZStack {
-      Color(.init(srgbRed: 243/255, green: 248/255, blue: 252/255, alpha: 1))
+      Color("BackgroundColor")
         .edgesIgnoringSafeArea(.all)
       
       VStack {
