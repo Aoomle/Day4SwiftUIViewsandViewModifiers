@@ -13,7 +13,19 @@
 		4735736B25C6FAA400CA2743 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4735736A25C6FAA400CA2743 /* Assets.xcassets */; };
 		4735736E25C6FAA400CA2743 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4735736D25C6FAA400CA2743 /* Preview Assets.xcassets */; };
 		4735737125C6FAA400CA2743 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4735736F25C6FAA400CA2743 /* LaunchScreen.storyboard */; };
+		4735737B25C6FAB900CA2743 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4735737A25C6FAB800CA2743 /* Game.swift */; };
+		4735738825C6FB6700CA2743 /* Day4SwiftUIViewsandViewModifiersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4735738725C6FB6700CA2743 /* Day4SwiftUIViewsandViewModifiersTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4735738A25C6FB6700CA2743 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4735735925C6FAA300CA2743 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4735736025C6FAA300CA2743;
+			remoteInfo = Day4SwiftUIViewsandViewModifiers;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		4735736125C6FAA300CA2743 /* Day4SwiftUIViewsandViewModifiers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Day4SwiftUIViewsandViewModifiers.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +36,21 @@
 		4735736D25C6FAA400CA2743 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		4735737025C6FAA400CA2743 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4735737225C6FAA400CA2743 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4735737A25C6FAB800CA2743 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		4735738525C6FB6700CA2743 /* Day4SwiftUIViewsandViewModifiersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Day4SwiftUIViewsandViewModifiersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4735738725C6FB6700CA2743 /* Day4SwiftUIViewsandViewModifiersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day4SwiftUIViewsandViewModifiersTests.swift; sourceTree = "<group>"; };
+		4735738925C6FB6700CA2743 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		4735735E25C6FAA300CA2743 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4735738225C6FB6700CA2743 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				4735736325C6FAA300CA2743 /* Day4SwiftUIViewsandViewModifiers */,
+				4735738625C6FB6700CA2743 /* Day4SwiftUIViewsandViewModifiersTests */,
 				4735736225C6FAA300CA2743 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				4735736125C6FAA300CA2743 /* Day4SwiftUIViewsandViewModifiers.app */,
+				4735738525C6FB6700CA2743 /* Day4SwiftUIViewsandViewModifiersTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,12 +81,9 @@
 		4735736325C6FAA300CA2743 /* Day4SwiftUIViewsandViewModifiers */ = {
 			isa = PBXGroup;
 			children = (
-				4735736425C6FAA300CA2743 /* AppDelegate.swift */,
-				4735736625C6FAA300CA2743 /* SceneDelegate.swift */,
-				4735736825C6FAA300CA2743 /* ContentView.swift */,
-				4735736A25C6FAA400CA2743 /* Assets.xcassets */,
-				4735736F25C6FAA400CA2743 /* LaunchScreen.storyboard */,
-				4735737225C6FAA400CA2743 /* Info.plist */,
+				4735737D25C6FAE200CA2743 /* App */,
+				4735737E25C6FAF600CA2743 /* Views */,
+				4735737925C6FAB800CA2743 /* Models */,
 				4735736C25C6FAA400CA2743 /* Preview Content */,
 			);
 			path = Day4SwiftUIViewsandViewModifiers;
@@ -73,6 +95,43 @@
 				4735736D25C6FAA400CA2743 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4735737925C6FAB800CA2743 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4735737A25C6FAB800CA2743 /* Game.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4735737D25C6FAE200CA2743 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				4735736425C6FAA300CA2743 /* AppDelegate.swift */,
+				4735736625C6FAA300CA2743 /* SceneDelegate.swift */,
+				4735736A25C6FAA400CA2743 /* Assets.xcassets */,
+				4735736F25C6FAA400CA2743 /* LaunchScreen.storyboard */,
+				4735737225C6FAA400CA2743 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		4735737E25C6FAF600CA2743 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4735736825C6FAA300CA2743 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4735738625C6FB6700CA2743 /* Day4SwiftUIViewsandViewModifiersTests */ = {
+			isa = PBXGroup;
+			children = (
+				4735738725C6FB6700CA2743 /* Day4SwiftUIViewsandViewModifiersTests.swift */,
+				4735738925C6FB6700CA2743 /* Info.plist */,
+			);
+			path = Day4SwiftUIViewsandViewModifiersTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,6 +154,24 @@
 			productReference = 4735736125C6FAA300CA2743 /* Day4SwiftUIViewsandViewModifiers.app */;
 			productType = "com.apple.product-type.application";
 		};
+		4735738425C6FB6700CA2743 /* Day4SwiftUIViewsandViewModifiersTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4735738C25C6FB6700CA2743 /* Build configuration list for PBXNativeTarget "Day4SwiftUIViewsandViewModifiersTests" */;
+			buildPhases = (
+				4735738125C6FB6700CA2743 /* Sources */,
+				4735738225C6FB6700CA2743 /* Frameworks */,
+				4735738325C6FB6700CA2743 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4735738B25C6FB6700CA2743 /* PBXTargetDependency */,
+			);
+			name = Day4SwiftUIViewsandViewModifiersTests;
+			productName = Day4SwiftUIViewsandViewModifiersTests;
+			productReference = 4735738525C6FB6700CA2743 /* Day4SwiftUIViewsandViewModifiersTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -106,6 +183,10 @@
 				TargetAttributes = {
 					4735736025C6FAA300CA2743 = {
 						CreatedOnToolsVersion = 12.2;
+					};
+					4735738425C6FB6700CA2743 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 4735736025C6FAA300CA2743;
 					};
 				};
 			};
@@ -123,6 +204,7 @@
 			projectRoot = "";
 			targets = (
 				4735736025C6FAA300CA2743 /* Day4SwiftUIViewsandViewModifiers */,
+				4735738425C6FB6700CA2743 /* Day4SwiftUIViewsandViewModifiersTests */,
 			);
 		};
 /* End PBXProject section */
@@ -138,6 +220,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4735738325C6FB6700CA2743 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -148,10 +237,27 @@
 				4735736525C6FAA300CA2743 /* AppDelegate.swift in Sources */,
 				4735736725C6FAA300CA2743 /* SceneDelegate.swift in Sources */,
 				4735736925C6FAA300CA2743 /* ContentView.swift in Sources */,
+				4735737B25C6FAB900CA2743 /* Game.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4735738125C6FB6700CA2743 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4735738825C6FB6700CA2743 /* Day4SwiftUIViewsandViewModifiersTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4735738B25C6FB6700CA2743 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4735736025C6FAA300CA2743 /* Day4SwiftUIViewsandViewModifiers */;
+			targetProxy = 4735738A25C6FB6700CA2743 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		4735736F25C6FAA400CA2743 /* LaunchScreen.storyboard */ = {
@@ -290,7 +396,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Day4SwiftUIViewsandViewModifiers/Preview Content\"";
 				DEVELOPMENT_TEAM = Q5Y5DR73B2;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Day4SwiftUIViewsandViewModifiers/Info.plist;
+				INFOPLIST_FILE = Day4SwiftUIViewsandViewModifiers/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -311,7 +417,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Day4SwiftUIViewsandViewModifiers/Preview Content\"";
 				DEVELOPMENT_TEAM = Q5Y5DR73B2;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Day4SwiftUIViewsandViewModifiers/Info.plist;
+				INFOPLIST_FILE = Day4SwiftUIViewsandViewModifiers/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -320,6 +426,46 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4735738D25C6FB6700CA2743 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q5Y5DR73B2;
+				INFOPLIST_FILE = Day4SwiftUIViewsandViewModifiersTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aoomle.Day4SwiftUIViewsandViewModifiersTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Day4SwiftUIViewsandViewModifiers.app/Day4SwiftUIViewsandViewModifiers";
+			};
+			name = Debug;
+		};
+		4735738E25C6FB6700CA2743 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q5Y5DR73B2;
+				INFOPLIST_FILE = Day4SwiftUIViewsandViewModifiersTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aoomle.Day4SwiftUIViewsandViewModifiersTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Day4SwiftUIViewsandViewModifiers.app/Day4SwiftUIViewsandViewModifiers";
 			};
 			name = Release;
 		};
@@ -340,6 +486,15 @@
 			buildConfigurations = (
 				4735737625C6FAA400CA2743 /* Debug */,
 				4735737725C6FAA400CA2743 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4735738C25C6FB6700CA2743 /* Build configuration list for PBXNativeTarget "Day4SwiftUIViewsandViewModifiersTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4735738D25C6FB6700CA2743 /* Debug */,
+				4735738E25C6FB6700CA2743 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
