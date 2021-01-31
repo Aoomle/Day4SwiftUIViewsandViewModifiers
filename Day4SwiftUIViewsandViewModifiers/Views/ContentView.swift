@@ -69,6 +69,10 @@ struct HitMetButton: View {
     })
     .foregroundColor(.white)
     .cornerRadius(21.0)
+    .overlay(
+      RoundedRectangle(cornerRadius: 21)
+        .strokeBorder(Color.white, lineWidth: 2.0)
+    )
     .alert(isPresented: $alertIsVisible, content: {
       let roundValue = Int(sliderValue.rounded())
       return Alert(title: Text("The slider's value is \(roundValue)\n" + "You scored \(game.points(sliderValue: roundValue)) points"), message: Text(""), dismissButton: .default(Text("Awesome!")))
