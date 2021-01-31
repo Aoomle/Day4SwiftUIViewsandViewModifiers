@@ -40,21 +40,28 @@ struct ContentView: View {
         }
         .padding()
         
-        Button(action: {
-          alertIsVisible = true
-        }) {
-          Text("Hit Me".uppercased())
-            .bold()
-            .font(.title3)
+        ZStack {
+          ZStack {
+            Button(action: {
+              alertIsVisible = true
+            }) {
+              Text("Hit Me".uppercased())
+                .bold()
+                .font(.title3)
+            }
+            .padding(20)
+            .background(ZStack {
+              Color.blue
+              LinearGradient(gradient: Gradient(colors: [Color.white.opacity(0.3), Color.clear]), startPoint: .top, endPoint: .bottom)
+            })
+            .foregroundColor(.white)
+            .cornerRadius(21.0)
+            .alert(isPresented: $alertIsVisible, content: {
+              let roundValue = Int(sliderValue.rounded())
+              return Alert(title: Text("The slider's value is \(roundValue)\n" + "You scored \(game.points(sliderValue: roundValue)) points"), message: Text(""), dismissButton: .default(Text("Awesome!")))
+          })
+          }
         }
-        .padding()
-        .background(Color.blue)
-        .foregroundColor(.white)
-        .cornerRadius(21.0)
-        .alert(isPresented: $alertIsVisible, content: {
-          let roundValue = Int(sliderValue.rounded())
-          return Alert(title: Text("The slider's value is \(roundValue)\n" + "You scored \(game.points(sliderValue: roundValue)) points"), message: Text(""), dismissButton: .default(Text("Awesome!")))
-        })
       }
     }
 }
