@@ -12,7 +12,11 @@ struct ContentView: View {
   @State private var sliderValue = 50.0
   @State private var game = Game()
   
-    var body: some View {
+  var body: some View {
+    ZStack {
+      Color(.init(srgbRed: 243/255, green: 248/255, blue: 252/255, alpha: 1))
+        .edgesIgnoringSafeArea(.all)
+      
       VStack {
         Text("🎯🎯🎯\nPut the bulleye as close as you can to".uppercased())
           .kerning(2)
@@ -40,36 +44,33 @@ struct ContentView: View {
         }
         .padding()
         
-        ZStack {
-          ZStack {
-            Button(action: {
-              alertIsVisible = true
-            }) {
-              Text("Hit Me".uppercased())
-                .bold()
-                .font(.title3)
-            }
-            .padding(20)
-            .background(ZStack {
-              Color.blue
-              LinearGradient(gradient: Gradient(colors: [Color.white.opacity(0.3), Color.clear]), startPoint: .top, endPoint: .bottom)
-            })
-            .foregroundColor(.white)
-            .cornerRadius(21.0)
-            .alert(isPresented: $alertIsVisible, content: {
-              let roundValue = Int(sliderValue.rounded())
-              return Alert(title: Text("The slider's value is \(roundValue)\n" + "You scored \(game.points(sliderValue: roundValue)) points"), message: Text(""), dismissButton: .default(Text("Awesome!")))
-          })
-          }
+        Button(action: {
+          alertIsVisible = true
+        }) {
+          Text("Hit Me".uppercased())
+            .bold()
+            .font(.title3)
         }
+        .padding(20)
+        .background(ZStack {
+          Color.blue
+          LinearGradient(gradient: Gradient(colors: [Color.white.opacity(0.3), Color.clear]), startPoint: .top, endPoint: .bottom)
+        })
+        .foregroundColor(.white)
+        .cornerRadius(21.0)
+        .alert(isPresented: $alertIsVisible, content: {
+          let roundValue = Int(sliderValue.rounded())
+          return Alert(title: Text("The slider's value is \(roundValue)\n" + "You scored \(game.points(sliderValue: roundValue)) points"), message: Text(""), dismissButton: .default(Text("Awesome!")))
+        })
       }
     }
+  }
 }
 
 struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-      ContentView()
-      ContentView()
-          .previewLayout(.fixed(width: 538, height: 320))
-    }
+  static var previews: some View {
+    ContentView()
+    ContentView()
+      .previewLayout(.fixed(width: 538, height: 320))
+  }
 }
