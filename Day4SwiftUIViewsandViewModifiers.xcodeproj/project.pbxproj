@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4704C31225C7C14B00F1328F /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4704C31125C7C14B00F1328F /* BackgroundView.swift */; };
 		4706A76F25C754BA00C2CC8A /* Shapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4706A76E25C754BA00C2CC8A /* Shapes.swift */; };
 		4706A77325C75A1500C2CC8A /* RoundViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4706A77225C75A1500C2CC8A /* RoundViews.swift */; };
 		4735736525C6FAA300CA2743 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4735736425C6FAA300CA2743 /* AppDelegate.swift */; };
@@ -31,6 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4704C31125C7C14B00F1328F /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 		4706A76E25C754BA00C2CC8A /* Shapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shapes.swift; sourceTree = "<group>"; };
 		4706A77225C75A1500C2CC8A /* RoundViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundViews.swift; sourceTree = "<group>"; };
 		4735736125C6FAA300CA2743 /* Day4SwiftUIViewsandViewModifiers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Day4SwiftUIViewsandViewModifiers.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -130,6 +132,7 @@
 				4706A77225C75A1500C2CC8A /* RoundViews.swift */,
 				478BA10225C74AE500D9E1E7 /* TextViews.swift */,
 				4706A76E25C754BA00C2CC8A /* Shapes.swift */,
+				4704C31125C7C14B00F1328F /* BackgroundView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -245,6 +248,7 @@
 			files = (
 				4735736525C6FAA300CA2743 /* AppDelegate.swift in Sources */,
 				4735736725C6FAA300CA2743 /* SceneDelegate.swift in Sources */,
+				4704C31225C7C14B00F1328F /* BackgroundView.swift in Sources */,
 				4735736925C6FAA300CA2743 /* ContentView.swift in Sources */,
 				4735737B25C6FAB900CA2743 /* Game.swift in Sources */,
 				478BA10325C74AE500D9E1E7 /* TextViews.swift in Sources */,
